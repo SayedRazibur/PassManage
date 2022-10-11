@@ -463,7 +463,7 @@ header::before {
   .cf-sec {
     position: relative;
     background-color: var(--clr-light);
-    z-index: -2;
+    z-index: 1;
     overflow: hidden;
   }
   .cf-sec::before {
