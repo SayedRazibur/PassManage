@@ -1,3 +1,3 @@
-# Password-Manager-Website
+# A simple static website
 - Plain CSS
 - Vanilla Javascript 
