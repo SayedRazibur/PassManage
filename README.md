@@ -1,3 +1,2 @@
 # A simple static website
-- Plain CSS
-- Vanilla Javascript 
+- Plain CSS Only
