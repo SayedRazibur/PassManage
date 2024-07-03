@@ -150,7 +150,8 @@ section {
     content: url(./img/dotImgBG.png);
     position: absolute;
     top: 20%;
-    right: -10%;
+    right: -13%;
+    /* opacity: ; */
     z-index: -1;
   }
   .left-dot-2 {
@@ -160,7 +161,7 @@ section {
     content: url(./img/dotImgBG.png);
     position: absolute;
     top: 22%;
-    left: -12%;
+    left: -13%;
     z-index: -1;
   }
 }
@@ -189,7 +190,7 @@ header::before {
   align-items: center;
 }
 .nav-wrapper a img {
-  max-width: 6em;
+  max-width: 3em;
 }
 .primary-nav {
   display: flex;
@@ -213,6 +214,9 @@ header::before {
   display: none;
 }
 @media (max-width: 45em) {
+  .nav-list li a:hover {
+    color: var(--clr-light);
+  }
   label {
     display: block;
     padding: 0.5rem;
@@ -247,13 +251,18 @@ header::before {
     overflow-y: hidden;
     transition: all 0.3s ease-in;
   }
-  a {
+  copyright {
     display: block;
     width: 100%;
     text-align: center;
   }
   #checkbox:not(:checked) ~ .nav-list-a {
     height: 0px;
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
   }
 
   #checkbox:checked ~ .nav-list-a {
@@ -265,15 +274,33 @@ header::before {
     overflow-y: auto;
   }
   .btn1 {
-    display: none !important;
+    background-color: var(--clr-light) !important;
+    color: var(--clr-text) !important;
   }
   .logo {
-    width: 4rem;
+    width: 2.5rem;
     float: left;
   }
 }
 /* Button Start*/
+
 .btn {
+  background-color: var(--clr-main);
+  color: white;
+  border: none;
+  height: 3rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: medium;
+  font-weight: 200;
+  letter-spacing: 0.9px;
+  cursor: pointer;
+}
+
+/* .btn {
   height: 3rem;
   width: 6rem;
   display: flex;
@@ -328,7 +355,7 @@ header::before {
   to {
     transform: rotate(1.125turn);
   }
-}
+} */
 
 /* Hero Section Start */
 @media (min-width: 1220px) {
@@ -537,6 +564,7 @@ form div {
 }
 .form-control-3 {
   width: 100%;
+  resize: vertical;
 }
 /* footer Start */
 footer {
